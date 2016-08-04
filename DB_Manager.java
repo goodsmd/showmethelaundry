@@ -2,7 +2,8 @@ public class DB_Manager {
 private String urlPath;
 // 회원 가입의 정보를 MySQL에 저장할 php를 포함한 도메인 주소를 입력한다.
 private final String signup_user_information_UrlPath = 
-"http://smartwheel.kr/user_signup/signup_user_information.php";
+"http://wbatw2003.cafe24.com/user_signup/signup_user_information.php
+";
 
 /*-- DB user에 접속하여 회원 가입에 관한 db 저장할 데이터 */
 private String user_id;
@@ -11,8 +12,8 @@ private String user_password;
 private String user_phone;
 private String user_email;
 
-함수 인자로 입력받은 유저의 아이디와 이름과 비밀번호, 핸드폰 번호, 이메일을 넘겨 받습니다.
-이후에 SignupUserInformation() 클래스를 실행합니다.
+//함수 인자로 입력받은 유저의 아이디와 이름과 비밀번호, 핸드폰 번호, 이메일을 넘겨 받습니다.
+//이후에 SignupUserInformation() 클래스를 실행합니다.
 
 /* 회원가입 부분 */
 /* -- 유저에게 id,password,핸드폰,이메일을 입력받는다. */
