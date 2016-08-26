@@ -18,7 +18,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity"/>
-        <activity android:name=".UserAreaActivity"/>
+        <activity android:name=".ChartActivity"/>
+        <activity android:name=".order.OrderActivity"/>
+        <activity android:name=".order.ItemDetailActivity"/>
+        <activity android:name=".order.ItemActivity"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.smtl.loginregister.order.OrderActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -27,6 +28,15 @@ public class LoginActivity extends AppCompatActivity {
         final EditText user_password = (EditText) findViewById(R.id.user_password);
         final TextView tvRegisterLink = (TextView) findViewById(R.id.tvRegisterLink);
         final Button bLogin = (Button) findViewById(R.id.bSignIn);
+        final Button btnChart = (Button)findViewById(R.id.btnChart);        //차트 버튼
+
+        btnChart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, com.smtl.loginregister.ChartActivity.class);
+                LoginActivity.this.startActivity(intent);
+            }
+        });
 
         tvRegisterLink.setOnClickListener(new View.OnClickListener() {      //회원가입 버튼 누르면 회원가입 창으로
             @Override
@@ -58,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
                                 int user_who = jsonResponse.getInt("user_who");
 
                                 if (user_who == 0) {        //고객이면
-                                    Intent intent = new Intent(LoginActivity.this, UserAreaActivity.class);
+                                    Intent intent = new Intent(LoginActivity.this, OrderActivity.class);
                                     intent.putExtra("in_user_email", user_email);
                                     intent.putExtra("in_user_name", user_name);
                                     intent.putExtra("in_user_phone", user_phone);
