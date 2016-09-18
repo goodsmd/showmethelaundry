@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="50dp">
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/ic_login_email"
+        android:ems="30"
+        android:hint="  E-mail address"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/user_email"
+        android:drawableLeft="@drawable/ic_login_password"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/user_password"
+        android:drawableLeft="@drawable/ic_login_name"
+        android:ems="10"
+        android:hint="  Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/user_name"
+        android:drawableLeft="@drawable/ic_login_telephone"
+        android:ems="10"
+        android:hint="  Phone"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/user_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/user_phone"
+        android:drawableLeft="@drawable/ic_login_address"
+        android:ems="10"
+        android:hint="  Address"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/user_who"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/user_address"
+        android:text="세탁소" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/laundry_name"
+        android:layout_below="@+id/user_who"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Laundry Name"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/bCancle"
+        android:layout_below="@+id/laundry_name"
+        android:text="sign up" />
+
+    <Button
+        android:id="@+id/bCancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/user_address"
+        android:layout_below="@+id/laundry_name"
+        android:layout_alignParentRight="true"
+        android:text="cancle" />
+</RelativeLayout>
